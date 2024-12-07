@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Welcome Message (Centered) -->
+<TextView
+android:id="@+id/welcomeMessage"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="120dp"
+android:text="Perfume Delivery App!"
+android:textColor="@android:color/black"
+android:textSize="26sp"
+android:textStyle="bold" />
+
+    <!-- Slogan Message (Centered below Welcome) -->
+<TextView
+android:id="@+id/sloganMessage"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/welcomeMessage"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="16dp"
+android:text="Your favorite perfumes, delivered to you!"
+android:textColor="@android:color/black"
+android:textSize="18sp"
+android:textStyle="italic" />
+
+    <!-- Get Started Button (Centered and positioned below the slogan) -->
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="0dp"
+
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:paddingStart="32dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="12dp"
+        android:text="Get Started"
+        android:textColorHint="@color/black"
+
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/sloganMessage"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

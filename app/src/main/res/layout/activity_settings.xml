@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@drawable/gradient">
+
+    <!-- Notification Checkbox -->
+    <CheckBox
+        android:id="@+id/notificationCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications"
+        android:textColor="#FFFFFF"
+    android:layout_marginBottom="16dp"
+    android:textSize="16sp"
+    android:paddingEnd="8dp"
+    android:layout_gravity="center_horizontal"
+    />
+
+    <!-- Save Settings Button -->
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+    android:background="@drawable/rounded_button"
+    android:layout_marginTop="16dp"
+    android:padding="12dp"
+    android:layout_gravity="center_horizontal"
+    />
+</LinearLayout>

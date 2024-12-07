@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/receipt"
+    android:padding="16dp">
+
+    <!-- Title of the checkout page -->
+    <TextView
+        android:id="@+id/checkoutTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout Summary"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:paddingBottom="16dp" />
+
+    <!-- Summary of cart items -->
+    <TextView
+        android:id="@+id/checkoutSummaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColorHint="@color/black"
+        android:text="Your cart is empty"
+        android:textColor="#000000" />
+
+    <!-- Total price display -->
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: PHP 0.00"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:textColorHint="@color/black"
+        android:paddingTop="16dp"
+        android:gravity="end"/>
+
+    <!-- Delivery Address Form -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Delivery Address"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="24dp"
+        android:textColorHint="@color/black"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/recipientNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient Name"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/recipientAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Delivery Address"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/recipientPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:inputType="phone" />
+
+    <!-- Checkout button to finalize the purchase -->
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/black"
+        android:text="Proceed to Payment"
+        android:textColorHint="@color/black" />
+
+</LinearLayout>

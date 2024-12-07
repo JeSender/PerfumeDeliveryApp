@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/receipt">
+
+        <!-- User Details -->
+        <TextView
+            android:id="@+id/userDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User: John Doe\nEmail: johndoe@example.com"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Receipt Summary -->
+        <TextView
+            android:id="@+id/receiptSummaryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Details will appear here"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: PHP 0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Payment Method RadioGroup -->
+        <RadioGroup
+            android:id="@+id/paymentMethodRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/cashOnDeliveryRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash on Delivery"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+        </RadioGroup>
+
+        <!-- Confirm Payment Button -->
+        <Button
+            android:id="@+id/confirmPaymentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>
